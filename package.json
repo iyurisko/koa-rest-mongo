@@ -1,0 +1,36 @@
+{
+  "name": "rest-koa-sql",
+  "version": "1.0.0",
+  "description": "boilerplate code for rest-sql",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index",
+    "test": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iyurisko/rest-koa-sql.git"
+  },
+  "keywords": [
+    "koa"
+  ],
+  "author": "Inggo Yurisko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iyurisko/rest-koa-sql/issues"
+  },
+  "homepage": "https://github.com/iyurisko/rest-koa-sql#readme",
+  "dependencies": {
+    "@koa/router": "^10.0.0",
+    "bluebird": "^3.7.2",
+    "dotenv": "^8.2.0",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-combine-routers": "^4.0.2",
+    "koa-router": "^10.0.0",
+    "mongodb": "^3.6.6",
+    "nodemon": "^2.0.7",
+    "ncurated": "1.1.9",
+    "yup": "^0.32.9"
+  }
+}
