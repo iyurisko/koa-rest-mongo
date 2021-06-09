@@ -1,6 +1,5 @@
 const {MongoClient} = require('mongodb')
-const connectionString = "mongodb+srv://inggoDev:ZR1RsrnAnJWy24w1@cluster0.hdilf.mongodb.net/gmart?retryWrites=true&w=majority"
- // process.env.APP_DB
+const connectionString =  process.env.APP_DB
 
 module.exports = () =>
   new MongoClient(connectionString, {
@@ -8,7 +7,6 @@ module.exports = () =>
   })
     .connect()
     .then((client) => {
-      // sdk.log.info('DB connected!', { service: 'database', type: 'mongo' });
 
       // wrap close, if needed
       const db = client.db();
